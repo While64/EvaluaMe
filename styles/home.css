@@ -1,0 +1,29 @@
+:root{
+    --botones: #606E17;
+    --letras: #FFFFFF; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "titles";
+}
+
+header{
+    display: flexbox;
+    justify-items: center;
+    place-items: center;
+    background-color: var(--letras);
+}
+
+nav{
+    display: flex;
+    gap: 1rem;
+}
+
+header > img{
+    height: 5rem;
+}
