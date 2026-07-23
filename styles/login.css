@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 1. Hacemos que el body ocupe toda la pantalla pero alinee los elementos arriba */
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.top-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #556B2F;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    margin-bottom: 30px; /* Espacio opcional entre la barra y tu formulario */
+}
+
+/* 3. Ajustamos la tarjeta para que mantenga su diseño limpio sin borde */
+
+
+/* Estilos de textos y títulos */
+.titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.titulos h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* Aplicamos los estilos a los tres nuevos nombres de clase agrupados */
+.correo,  .contrasena {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 480px;
+    justify-content: space-between;
+}
+
+/* Actualizamos aquí para que afecte a las etiquetas dentro de tus nuevos divs */
+.correo label,  .contrasena label {
+    font-size: 16px;
+    color: #000000;
+    font-weight: normal;
+}
+
+/* Actualizamos aquí para que afecte a los inputs dentro de tus nuevos divs */
+.correo input,  .contrasena input {
+    width: 330px;
+    height: 38px;
+    background-color: #d9d9d9; /* Gris claro de los inputs */
+    border: none;
+    border-radius: 8px;
+    padding: 0 12px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Botón central "Registrar" */
+.btnLogin {
+    background-color: #556B2F;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnLogin:hover {
+    background-color: #445624;
+}
+
+/* Botón inferior derecho "Regresar" */
+.btn-regresar {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    background-color: #556B2F;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-regresar:hover {
+    background-color: #445624;
+}

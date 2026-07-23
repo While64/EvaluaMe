@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUEVA EVALUACION</title>
+    
+    <link rel="icon" href="./images/logo_small.png" type="image/png">
+    
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="../images/logo_full.png" alt="EvaluaMe Logo" class="logo">
+            <img src="../images/usuario_icon.png" alt="Icono de Usuario" class="icono-usuario">
+        </div>
+
+        <nav class="barra-verde">
+            <a href="./home.html">Inicio</a>
+            <span class="pagina-actual">Nueva Evaluación</span>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <h2 class="titulo-seccion">Crear Nueva Evaluación</h2>
+        
+        <form class="formulario-evaluacion" action="#" method="POST">
+            
+            <div class="grupo-campo largo">
+                <label for="nombre-evento">Nombre del Evento / Proyecto:</label>
+                <input type="text" id="nombre-evento" name="nombre_evento" placeholder="Ej. Expo Ingenierías 2026" required>
+            </div>
+
+            <div class="grupo-campo largo">
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" placeholder="Escribe una breve descripción del evento o evaluación..."></textarea>
+            </div>
+
+            <div class="fila-campos">
+                <div class="grupo-campo">
+                    <label for="carrera">Carrera:</label>
+                    <select id="carrera" name="carrera" required>
+                        <option value="" disabled selected>Selecciona una carrera</option>
+                        <option value="itiid">ING. En Biotecnologia</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="grupos">Grupos participantes:</label>
+                    <input type="text" id="grupos" name="grupos" placeholder="Ej. 3A, 3B, 5A">
+                </div>
+            </div>
+
+            <div class="fila-campos">
+                <div class="grupo-campo">
+                    <label for="fecha-inicio">Fecha de Inicio:</label>
+                    <input type="date" id="fecha-inicio" name="fecha_inicio" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="fecha-fin">Fecha de Término:</label>
+                    <input type="date" id="fecha-fin" name="fecha_fin" required>
+                </div>
+            </div>
+
+            <div class="fila-campos">
+                <div class="grupo-campo">
+                    <label for="equipos">Equipos / Integrantes:</label>
+                    <input type="text" id="equipos" name="equipos" placeholder="Ej. Equipo 1, Equipo Alpha...">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="parametros">Parámetros de Evaluación:</label>
+
+                    <input type="text" id="parametros" name="parametros" placeholder="Ej. Innovación, Presentación, Funcionalidad">
+                </div>
+            </div>
+
+            <div class="acciones-formulario">
+                <button type="submit" class="btn-guardar">Guardar Evaluación</button>
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        <div class="footer-contenido">
+            <div class="telefono">
+                <p><span class="titulo-footer">CONTACTO: </span>+52 871 568 1291</p>
+            </div>
+            <div class="acerca_de">
+                <p><span class="titulo-footer">ACERCA DE NOSOTROS: </span>Proyecto integrador 3A ING. En Tecnologias De La Informacion E Innovacion Digital</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

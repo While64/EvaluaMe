@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+
+<body>
+    <!-- Barra superior pegada arriba -->
+    <header class="top-bar"></header>
+
+    <!-- Contenido del formulario directo en el body -->
+    <section class="titulos">
+        <h1>INICIAR SESION</h1>
+        
+
+        <form>
+            <div class="correo">
+                <label for="correo">Correo</label>
+                <input type="email" id="InputCorreoLog" name="correo">
+            </div>
+        
+            <div class="contrasena">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="InputContrasenaLog" name="contrasena">
+            </div>
+
+            <button type="submit" id="btnLogin" class="btnLogin">Login</button>
+        </form>
+    </section>
+
+    <!-- Botón inferior derecho para regresar -->
+    <a href="./inicio.html" class="btn-regresar">Regresar</a>
+</body>
+    <script type="module" src="../js/loginfire.js"></script>
+</html>

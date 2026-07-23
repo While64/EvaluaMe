@@ -1,0 +1,254 @@
+:root {
+    --verde_principal: #576B2D;
+    --gris_fondo: #E5E5E5;
+    --verde_tarjeta: #E9EBD7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contenido-principal {
+    flex: 1;
+    padding: 40px 60px;
+}
+
+.header-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.titulo-seccion {
+    color: #333333;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.enlace-btn {
+    text-decoration: none;
+}
+
+.btn-nueva-evaluacion {
+    background-color: var(--verde_principal);
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.btn-nueva-evaluacion:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.35);
+    transform: translateY(-2px);
+}
+
+.contenedor-proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tarjeta-proyecto {
+    background-color: var(--verde_tarjeta);
+    width: 100%;
+    max-width: 700px;
+    min-height: 90px;
+    border-radius: 12px;
+    padding: 20px 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.tarjeta-proyecto:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.nombre-proyecto {
+    color: #2D3A14;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.fechas-proyecto p {
+    color: #4A5237;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.fechas-proyecto span {
+    font-weight: bold;
+}
+
+.formulario-evaluacion {
+    background-color: var(--verde_tarjeta);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.fila-campos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 250px;
+}
+
+.grupo-campo.largo {
+    width: 100%;
+}
+
+.grupo-campo label {
+    font-weight: bold;
+    color: #2D3A14;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.grupo-campo input,
+.grupo-campo select,
+.grupo-campo textarea {
+    padding: 10px 14px;
+    border: 1px solid #BAC2A3;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #FFFFFF;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.grupo-campo input:focus,
+.grupo-campo select:focus,
+.grupo-campo textarea:focus {
+    border-color: var(--verde_principal);
+}
+
+.acciones-formulario {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.btn-guardar {
+    background-color: var(--verde_principal);
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.btn-guardar:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+.header-top {
+    background-color: var(--gris_fondo);
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.logo {
+    height: 3.5rem;
+    width: auto;
+}
+
+.icono-usuario {
+    height: 2.5rem;
+    width: auto;
+    cursor: pointer;
+}
+
+.barra-verde {
+    background-color: var(--verde_principal);
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
+}
+
+.barra-verde a {
+    color: #D5DBC9;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.barra-verde a:hover {
+    color: #FFFFFF;
+}
+
+.barra-verde .pagina-actual {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: var(--verde_principal);
+    color: #FFFFFF;
+    padding: 20px 30px;
+    box-shadow: 0px -20px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.telefono p, .acerca_de p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.titulo-footer {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5px;
+}
