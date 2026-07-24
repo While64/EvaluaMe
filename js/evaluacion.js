@@ -41,7 +41,7 @@ const inputParametros = document.querySelector('#parametros');
 
 const formEvaluacion = document.querySelector('#form-evaluacion');
 
-// 2. Al enviar el formulario, obtienes el .value de cada uno
+
 formEvaluacion.addEventListener('submit', async (e) => {
     e.preventDefault();
 
